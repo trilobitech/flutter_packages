@@ -118,7 +118,7 @@ jobs:
 
 
       - name: Codecov
-        uses: codecov/codecov-action@v4
+        uses: codecov/codecov-action@v5
         with:
           flags: ${{ steps.codecov-flag.outputs.name }}
           file: ${{ matrix.tests }}/coverage/lcov.info
